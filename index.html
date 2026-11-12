@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kok Yu San – Cybersecurity Portfolio</title>
+<meta name="description" content="Cybersecurity projects, skills and learning journey by Kok Yu San.">
+<style>
+:root{--bg:#f6f8fb;--surface:#fff;--ink:#0f1b2d;--muted:#52607a;--line:#dbe2ee;--accent:#3b5bdb;--hot:#c2410c;--term:#0f1b2d;--termtx:#d6e2ff}
+@media(prefers-color-scheme:dark){:root{--bg:#0b1220;--surface:#121c30;--ink:#e8eefc;--muted:#9fb0cc;--line:#25324d;--accent:#8ea6ff;--hot:#fb923c;--term:#070d19;--termtx:#cfe0ff}}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:64px}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+h1,h2,h3{font-family:"Iowan Old Style",Palatino,Georgia,serif;line-height:1.15;margin:0 0 .6em}
+h1{font-size:clamp(2.2rem,5vw,3.4rem)}h2{font-size:2rem}h3{font-size:1.2rem}
+a{color:var(--accent)}a:focus-visible,button:focus-visible{outline:3px solid var(--hot);outline-offset:2px}
+nav{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+nav div{max-width:1040px;margin:auto;padding:.8rem 1.2rem;display:flex;gap:1.1rem;flex-wrap:wrap;font-size:.95rem}
+nav a{text-decoration:none;color:var(--muted)}nav a:hover{color:var(--accent)}nav b{margin-right:auto;color:var(--ink)}
+main,.hero{max-width:1040px;margin:auto;padding:0 1.2rem}
+.hero{display:grid;grid-template-columns:1.1fr 1fr;gap:2.5rem;align-items:center;padding-top:4rem;padding-bottom:3rem}
+.hero p{color:var(--muted);max-width:34em}
+.btns{display:flex;gap:.8rem;flex-wrap:wrap;margin-top:1.4rem}
+.btn{padding:.65rem 1.2rem;border-radius:8px;text-decoration:none;font-weight:600;border:1px solid var(--accent)}
+.btn.p{background:var(--accent);color:var(--bg)}
+.term{background:var(--term);color:var(--termtx);border-radius:12px;padding:1.1rem 1.3rem;font:.82rem/1.7 ui-monospace,Menlo,Consolas,monospace;overflow-x:auto;border:1px solid var(--line)}
+.term .k{color:#7dd3a8}.term .w{color:#fdba74}.term .d{opacity:.6}
+section{padding:3rem 0;border-top:1px solid var(--line)}
+.wrap{overflow-x:auto}table{border-collapse:collapse;width:100%;min-width:560px}
+th,td{text-align:left;padding:.7rem .8rem;border-bottom:1px solid var(--line);vertical-align:top}th{color:var(--muted);font-weight:600;font-size:.9rem}
+.lv{display:inline-block;padding:.1rem .65rem;border-radius:99px;border:1px solid var(--accent);color:var(--accent);font-size:.85rem;white-space:nowrap}
+.lv.b{border-color:var(--hot);color:var(--hot)}
+.proj{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem}
+.proj article{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:10px;padding:1.3rem}
+.proj article+article{border-left-color:var(--hot)}
+.proj ul{padding-left:1.1rem;color:var(--muted);margin:.5rem 0 1rem}
+.tag{font-size:.8rem;color:var(--muted)}
+.prose{max-width:46em}
+.prose h3{margin-top:1.6em}
+footer{max-width:1040px;margin:auto;padding:2rem 1.2rem;color:var(--muted);font-size:.9rem;border-top:1px solid var(--line)}
+@media(max-width:760px){.hero,.proj{grid-template-columns:1fr}.hero{padding-top:2.2rem}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<nav><div><b>Kok Yu San</b><a href="#about">About</a><a href="#skills">Skills</a><a href="#certifications">Certifications</a><a href="#projects">Projects</a><a href="#journey">Learning journey</a><a href="#career">Career</a><a href="#contact">Contact</a></div></nav>
+
+<header class="hero">
+<div>
+<h1>Cybersecurity portfolio</h1>
+<p>Hands-on lab work, honest skill levels and a learning plan aimed at cloud security engineering. Built for WQE7001 Cyber Security at Universiti Malaya.</p>
+<div class="btns"><a class="btn p" href="#projects">View projects</a><a class="btn" href="#contact">Get in touch</a></div>
+</div>
+<div class="term" role="img" aria-label="Excerpt of an Nmap scan of the lab target">
+<span class="d">kali@kali:~$</span> nmap -sV 192.168.56.107<br>
+<span class="d">Not shown: 977 closed tcp ports</span><br>
+21/tcp&nbsp; open ftp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="w">vsftpd 2.3.4</span><br>
+22/tcp&nbsp; open ssh&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;OpenSSH 4.7p1<br>
+23/tcp&nbsp; open telnet&nbsp;&nbsp;&nbsp;Linux telnetd<br>
+1524/tcp open bindshell <span class="w">Metasploitable root shell</span><br>
+6667/tcp open irc&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;UnrealIRCd<br>
+<span class="k">23 open ports found in my isolated lab</span>
+</div>
+</header>
+
+<main>
+<section id="about" class="prose">
+<h2>About me</h2>
+<p>I am a student at Universiti Malaya building a career in cloud security. I have a foundation in networking, Linux and Python, and I have worked with an Identity and Access Management (IAM) team, where I saw how permissions and access reviews protect real systems.</p>
+<p>In WQE7001 I built an isolated Kali Linux and Metasploitable lab and used Nmap to map an attack surface. It showed me how small misconfigurations and outdated services turn into real risk. What draws me to cybersecurity is that it combines careful technical work with protecting people and organisations. I now want to apply these skills to securing cloud environments, where identity, configuration and monitoring decide how safe an organisation is.</p>
+</section>
+
+<section id="skills">
+<h2>Technical skills</h2>
+<p class="tag">Levels are my own honest assessment. Projects link to the evidence.</p>
+<div class="wrap"><table>
+<tr><th>Skill</th><th>Level</th><th>Evidence</th></tr>
+<tr><td>Networking (TCP/IP, DNS, subnets, switching and routing)</td><td><span class="lv">Working knowledge</span></td><td>Cisco ITN and SRWE; <a href="https://github.com/kok847/cybersecurity-portfolio/tree/main/projects/virtual-lab-setup">Virtual lab setup</a></td></tr>
+<tr><td>Linux command line</td><td><span class="lv">Working knowledge</span></td><td><a href="https://github.com/kok847/cybersecurity-portfolio/tree/main/projects/virtual-lab-setup">Virtual lab setup</a></td></tr>
+<tr><td>VirtualBox lab design</td><td><span class="lv">Working knowledge</span></td><td><a href="https://github.com/kok847/cybersecurity-portfolio/tree/main/projects/virtual-lab-setup">Virtual lab setup</a></td></tr>
+<tr><td>Nmap scanning and service enumeration</td><td><span class="lv">Working knowledge</span></td><td><a href="https://github.com/kok847/cybersecurity-portfolio/tree/main/projects/nmap-service-scan">Nmap service scan</a></td></tr>
+<tr><td>Vulnerability reasoning (CVE research)</td><td><span class="lv b">Beginner</span></td><td><a href="https://github.com/kok847/cybersecurity-portfolio/tree/main/projects/nmap-service-scan">Nmap service scan</a></td></tr>
+<tr><td>Python</td><td><span class="lv">Working knowledge</span></td><td>Coursework</td></tr>
+<tr><td>Identity and Access Management</td><td><span class="lv">Working knowledge</span></td><td>Work experience in an IAM team</td></tr>
+<tr><td>Wireshark, Metasploit, Burp Suite</td><td><span class="lv b">Beginner</span></td><td>Introduced in coursework</td></tr>
+<tr><td>AWS (EC2, S3, VPC, IAM)</td><td><span class="lv b">Beginner</span></td><td>Learning in progress</td></tr>
+</table></div>
+</section>
+
+<section id="certifications">
+<h2>Certifications and training</h2>
+<div class="wrap"><table>
+<tr><th>Item</th><th>Status</th></tr>
+<tr><td>Cisco Networking Academy: Introduction to Networks (ITN)</td><td><span class="lv">Completed</span> <!-- Add Credly badge link if you have one --></td></tr>
+<tr><td>Cisco Networking Academy: Switching, Routing, and Wireless Essentials (SRWE)</td><td><span class="lv">Completed</span> <!-- Add Credly badge link if you have one --></td></tr>
+<tr><td>Cisco Networking Academy: CyberOps Associate course</td><td><span class="lv b">In progress</span> Target date: 25 Dec 2026</td></tr>
+<tr><td>Cisco Certified Network Associate (CCNA) certification</td><td><span class="lv b">In progress</span> Exam target date: 5 Dec 2026</td></tr>
+<tr><td>AWS Certified Cloud Practitioner</td><td><span class="lv b">In progress</span> Target date: 28 February 2027</td></tr>
+<tr><td>AWS Skill Builder: Cloud Practitioner learning path</td><td><span class="lv b">In progress</span></td></tr>
+<tr><td>WQE7001 Cyber Security, Universiti Malaya</td><td><span class="lv">Current course</span></td></tr>
+</table></div>
+<p class="tag">Courses above are training, not certifications. No certification has been earned yet. Earned items will be listed with a verifiable badge link.</p>
+</section>
+
+<section id="projects">
+<h2>Projects</h2>
+<div class="proj">
+<article><h3>Isolated virtual lab</h3><p>An attacker and target lab on a VirtualBox Host-Only network, with no route to the outside world.</p>
+<ul><li>Kali Linux 2021.2, Metasploitable 2</li><li>Network checks and ping tests</li><li>Lab diagram and screenshots</li></ul>
+<a href="https://github.com/kok847/cybersecurity-portfolio/tree/main/projects/virtual-lab-setup">Read the write-up</a></article>
+<article><h3>Nmap service scan</h3><p>Host discovery and service enumeration of the lab target, with findings grouped by risk and fixes.</p>
+<ul><li>23 open ports, 7 risk categories</li><li>CVE-2011-2523 verification caveat</li><li>Remediation plan</li></ul>
+<a href="https://github.com/kok847/cybersecurity-portfolio/tree/main/projects/nmap-service-scan">Read the write-up</a></article>
+</div>
+<p class="tag">All testing was done only on virtual machines I own, inside an isolated network.</p>
+</section>
+
+<section id="journey" class="prose">
+<h2>Learning journey</h2>
+<h3>Building the isolated lab</h3>
+<p>The first lab taught me that safe testing starts with network design, not tools. I put Kali Linux and Metasploitable 2 on a VirtualBox Host-Only network (192.168.56.0/24) and deliberately avoided Bridged mode, so a deliberately vulnerable machine could never be reached from the physical network. I verified the set-up with <code>ip a</code>, ping tests and the adapter settings instead of assuming it worked. This connected directly to the authorisation and ethics material: I only test systems I own or control, and I now treat scope and permission as the first step of any test.</p>
+<h3>Nmap service enumeration</h3>
+<p>Host discovery (<code>-sn</code>) followed by version detection (<code>-sV</code>) showed me how much an attacker can learn from banners alone: one host exposed 23 open ports and many outdated services. The most useful lesson was that a version string is a lead, not proof. vsftpd 2.3.4 is linked to CVE-2011-2523, but only a tampered copy distributed for a few days in July 2011 contained the backdoor. I learned to word findings carefully and to verify before claiming a vulnerability exists.</p>
+<h3>What went wrong</h3>
+<p>In my first write-up I reported three active hosts, but the Nmap output listed four, and I claimed Kali did not appear in the results. I diagnosed this by comparing every address in the scan with the output of <code>ip a</code> on both VMs and with the host adapter settings. 192.168.56.106 was my own Kali machine, which Nmap lists without a MAC address or latency because it is the scanner. I corrected the write-up, and I now reconcile every scan result with a known device before describing it. Earlier in the lab I also typed <code>ipconfig</code> on Metasploitable and got “command not found”, because it is a Linux system. Switching to <code>ip a</code> fixed it.</p>
+<h3>What I still find challenging</h3>
+<p>Cloud IAM, especially writing least-privilege policies. I have seen IAM from the operations side in my team, but turning “only what the job needs” into precise AWS policy statements, and checking them against CloudTrail logs, is new to me. The Capital One breach case study showed how costly broad permissions can be.</p>
+<h3>Improvement goal</h3>
+<p>By 28 February 2027 I will pass the AWS Certified Cloud Practitioner exam. I will measure progress by finishing the AWS Skill Builder learning path, scoring at least 80% on weekly practice quizzes, and passing the exam (the pass mark is 700 out of 1000). I will also publish one IAM least-privilege lab write-up in this portfolio by 15 February 2027.</p>
+<p>Overall, this course moved me from running tools to explaining results. Every claim in this portfolio is now tied to evidence such as a screenshot or saved scan output.</p>
+</section>
+
+<section id="career" class="prose">
+<h2>Career objective</h2>
+<p>My target role is Cloud Security Engineer: protecting cloud infrastructure, applications and data through IAM, encryption, secure configuration and monitoring. My next steps are:</p>
+<ol>
+<li>Earn the AWS Certified Cloud Practitioner certification by 28 February 2027 to build a solid cloud foundation.</li>
+<li>Spend the following three months practising IAM least-privilege policies, CloudTrail, GuardDuty and Security Hub in the AWS Free Tier and AWS Workshops.</li>
+<li>Build a small project with a private VPC, secure S3 storage, IAM policies and CloudTrail monitoring, publish it here, and apply for cloud engineering internships and junior cloud security roles.</li>
+</ol>
+<p>Longer term, I plan to take the AWS Certified Solutions Architect – Associate exam.</p>
+</section>
+
+<section id="contact">
+<h2>Contact</h2>
+<p>Email: <a href="mailto:yusankok847@gmail.com">yusankok847@gmail.com</a><br>
+GitHub: <a href="https://github.com/kok847">github.com/kok847</a><br>
+LinkedIn: <a href="https://www.linkedin.com/in/kok847/">linkedin.com/in/kok847</a></p>
+</section>
+</main>
+<footer>© 2026 Kok Yu San. Built with plain HTML and hosted on GitHub Pages.</footer>
+</body>
+</html>
