@@ -1,0 +1,14 @@
+# Secrets and local files
+.env
+*.key
+*.pem
+*.ppk
+.DS_Store
+Thumbs.db
+# Large binaries (never commit VM images or captures)
+*.ova
+*.vdi
+*.vmdk
+*.iso
+*.pcap
+*.pcapng
