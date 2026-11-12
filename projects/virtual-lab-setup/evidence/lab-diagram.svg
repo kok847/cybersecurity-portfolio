@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 300" font-family="system-ui,Segoe UI,Arial,sans-serif">
+<rect width="640" height="300" fill="#f6f8fb"/>
+<rect x="20" y="20" width="600" height="260" rx="14" fill="#eef2ff" stroke="#3b5bdb" stroke-dasharray="6 4"/>
+<text x="36" y="46" font-size="14" fill="#3b5bdb" font-weight="600">VirtualBox Host-Only network 192.168.56.0/24 (isolated)</text>
+<rect x="50" y="110" width="170" height="90" rx="10" fill="#fff" stroke="#0f1b2d"/>
+<text x="135" y="145" font-size="15" text-anchor="middle" font-weight="600">Kali Linux (attacker)</text>
+<text x="135" y="170" font-size="13" text-anchor="middle" fill="#475569">192.168.56.106</text>
+<rect x="420" y="110" width="170" height="90" rx="10" fill="#fff" stroke="#c2410c"/>
+<text x="505" y="145" font-size="15" text-anchor="middle" font-weight="600">Metasploitable 2</text>
+<text x="505" y="170" font-size="13" text-anchor="middle" fill="#475569">192.168.56.107 (target)</text>
+<line x1="220" y1="155" x2="420" y2="155" stroke="#3b5bdb" stroke-width="2.5"/>
+<text x="320" y="146" font-size="12" text-anchor="middle" fill="#3b5bdb">ping / Nmap</text>
+<rect x="250" y="225" width="140" height="38" rx="8" fill="#fff" stroke="#64748b"/>
+<text x="320" y="248" font-size="12" text-anchor="middle" fill="#475569">Host 192.168.56.1 · DHCP .100</text>
+<text x="320" y="82" font-size="12" text-anchor="middle" fill="#b91c1c">No NAT or Bridged adapter: no route to the internet</text>
+</svg>
